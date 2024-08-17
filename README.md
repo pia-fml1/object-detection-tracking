@@ -4,10 +4,7 @@
 - Added Label for Every Track
 - Code can run on Both (CPU & GPU)
 - Video/WebCam/External Camera/IP Stream Supported
-
-### Coming Soon
-- Development of streamlit dashboard for Object Tracking
-
+  
 ### Steps to run Code
 - Goto the cloned folder.
 ```
@@ -48,9 +45,6 @@ python detect_and_track.py --weights yolov7.pt --source 0
 
 #for External Camera
 python detect_and_track.py --weights yolov7.pt --source 1
-
-#For LiveStream (Ip Stream URL Format i.e "rtsp://username:pass@ipaddress:portno/video/video.amp")
-python detect_and_track.py --source "your IP Camera Stream URL" --device 0
 
 #for specific class (person)
 python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --classes 0
